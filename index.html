@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #031B4E;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        
+        p {
+            color: #666;
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        
+        .feature {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .feature h3 {
+            color: #031B4E;
+            margin-bottom: 10px;
+        }
+        
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin-top: 30px;
+            text-align: left;
+        }
+        
+        .note strong {
+            color: #856404;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 Добро пожаловать!</h1>
+        <p>Это демо-страница с интегрированным чатботом. Чатбот появится в правом нижнем углу экрана.</p>
+        
+        <div class="feature">
+            <h3>Как использовать</h3>
+            <p>Нажмите на иконку чатбота в правом нижнем углу, чтобы начать диалог.</p>
+        </div>
+        
+        <div class="note">
+            <strong>💡 Информация:</strong><br>
+            Чатбот работает на основе DigitalOcean AI Agents и готов ответить на ваши вопросы!
+        </div>
+    </div>
+
+    <!-- Chatbot Widget Script -->
+    <script async
+        src="https://ym7vxpc3rjhpioxd74zvfhku.agents.do-ai.run/static/chatbot/widget.js"
+        data-agent-id="7b93d549-eb25-11f0-b074-4e013e2ddde4"
+        data-chatbot-id="XYzq6D_1zj1q_hkHch_dZOCgONbA0why"
+        data-name="asksub Chatbot"
+        data-primary-color="#031B4E"
+        data-secondary-color="#E5E8ED"
+        data-button-background-color="#0061EB"
+        data-starting-message="Hello! How can I help you today?"
+        data-logo="/static/chatbot/icons/default-agent.svg">
+    </script>
+</body>
+</html>
